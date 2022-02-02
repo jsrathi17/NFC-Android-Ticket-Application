@@ -22,19 +22,29 @@ The application logic for ticket and security features can be found in:  NFC-And
 # Ticket Application Structure
 
 Page 32: This is the MAC calculated from Page 34 to 39
+
 Page 33: This is the MAC calculated from Page 35 to 39.
+
 Page 34: This page contains the time of expiry. 
+
 Page 35: This specifies the version of application. If there are multiple versions.
+
 Page 36: This specifies the tag of the application, that will be used by reader to identify the specific 
 application. 
+
 Page 37: This page contains the time when ticket was issued. 
+
 Page 38: This page contains the number of issued tickets till now. 
+
 Page 41: 16-bit counter to count the tickets used. Every time the ticket is issued, the counter is 
 incremented by 1. We compare the incremented counter value with initial counter value and number of 
 rides that is in the User data.
+
 Page 42 (AUTH0): 04h: This specifies from where the authentication part starts. In our case, we protect 
 the memory from 04h.
+
 Page 43 (AUTH1): Write access to the pages that are specified in AUTH0. 
+
 Page 44 to 46: This memory page contains the authentication key. The authentication key contains the 
 hash of the UID with some secret message that is only known by the reader. The reader will 
 authenticate the ticket card using this Hash.
