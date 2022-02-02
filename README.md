@@ -16,6 +16,8 @@ attack, tearing protection, Write Protection.
 - The ticket is no longer valid after maximum ride counts have been reached. 
 - Customer can buy additional tickets.
 
+# Code Structure
+The application logic for ticket and security features can be found in:  NFC-Android-Ticket-Application/app/src/main/java/com/ticketapp/auth/ticket/Ticket.java
 
 # Ticket Application Structure
 
@@ -39,24 +41,24 @@ authenticate the ticket card using this Hash.
 
 
 # Security Protocols
-• MitM attack: MitM attack is mitigated by using the MAC scheme. We generate a MAC using a diversified key 
+• **MitM attack:** MitM attack is mitigated by using the MAC scheme. We generate a MAC using a diversified key 
 for all the information stored in the card – application tag, version number, expiry time, initial 
 counter value, number of rides. 
 
-• Rollback attack: 16-bit counter is used to protect against the rollback attack. The counter of the card is a oneway monotonic counter which cannot be rolled back. 
+• **Rollback attack:** 16-bit counter is used to protect against the rollback attack. The counter of the card is a oneway monotonic counter which cannot be rolled back. 
 
-• Tearing protection: We keep a backup MAC to cater for the tearing attack. We write the first mac, when issuing 
+• **Tearing protection:** We keep a backup MAC to cater for the tearing attack. We write the first mac, when issuing 
 tickets and the other MAC when the card is being used for the first time. When card is used for 
 the first time, there are two write operations – updating counter value, writing expiry time. We 
 generate a backup MAC using expiry time.
 
-• Key diversification: K = h(master secret | UID) Diversified keys are used for authentication and MAC scheme using 
+• **Key diversification:** K = h(master secret | UID) Diversified keys are used for authentication and MAC scheme using 
 the UID specific to each card and a master secret. Compromise of one card will not hamper or 
 impact security of other cards, because the key for every card is different. 
 
-• Write protection: AUTH0 and AUTH1 are set for blocking writing to the card without authentication. Without the 
+• **Write protection:** AUTH0 and AUTH1 are set for blocking writing to the card without authentication. Without the 
 secret key, the attacker can only know the UID of the card and cannot break the card. 
 
-• Application Tag and Version: We use application tag to ensure that, the card is used for the purpose it is designed for. We use 
+• **Application Tag and Version:** We use application tag to ensure that, the card is used for the purpose it is designed for. We use 
 application version, for backward compatibility. The version number field will be useful later 
 when we update the application or need multiple version of the ticket
