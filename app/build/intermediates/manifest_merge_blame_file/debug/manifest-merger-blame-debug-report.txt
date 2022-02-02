@@ -1,0 +1,93 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.auth"
+4    android:versionCode="1"
+5    android:versionName="1.0e" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.NFC" />
+11-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:7:5-62
+11-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:7:22-59
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:8:5-66
+12-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:8:22-63
+13
+14    <uses-feature
+14-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:10:5-12:35
+15        android:name="android.hardware.nfc"
+15-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:11:9-44
+16        android:required="true" />
+16-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:12:9-32
+17
+18    <application
+18-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:14:5-45:19
+19        android:allowBackup="true"
+19-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:15:9-35
+20        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+20-->[com.android.support:support-compat:28.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+21        android:debuggable="true"
+22        android:icon="@drawable/ic_launcher"
+22-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:16:9-45
+23        android:label="@string/app_name"
+23-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:17:9-41
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:18:9-40
+26        <activity
+26-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:19:9-34:20
+27            android:name="com.ticketapp.auth.app.main.TicketActivity"
+27-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:20:13-70
+28            android:label="@string/app_name"
+28-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:21:13-45
+29            android:screenOrientation="portrait" >
+29-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:22:13-49
+30            <intent-filter>
+30-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:23:13-28:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:24:17-69
+31-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:24:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:27:17-77
+33-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:27:27-74
+34            </intent-filter>
+35            <intent-filter>
+35-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:29:13-104
+36                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+36-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:29:28-88
+36-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:29:36-85
+37            </intent-filter>
+38
+39            <meta-data
+39-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:31:13-33:59
+40                android:name="android.nfc.action.TECH_DISCOVERED"
+40-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:32:17-66
+41                android:resource="@xml/nfc_tech_filter" />
+41-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:33:17-56
+42        </activity>
+43
+44        <provider
+44-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:36:9-44:20
+45            android:name="android.support.v4.content.FileProvider"
+45-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:37:13-67
+46            android:authorities="com.ticketapp.auth.app.fragments.ArchiveFragment"
+46-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:38:13-83
+47            android:exported="false"
+47-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:39:13-37
+48            android:grantUriPermissions="true" >
+48-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:40:13-47
+49            <meta-data
+49-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:41:13-43:52
+50                android:name="android.support.FILE_PROVIDER_PATHS"
+50-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:42:17-67
+51                android:resource="@xml/my_paths" />
+51-->C:\Users\user\Downloads\nfc_ticket_code\app\src\main\AndroidManifest.xml:43:17-49
+52        </provider>
+53    </application>
+54
+55</manifest>

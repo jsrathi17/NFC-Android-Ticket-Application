@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.ticketapp.auth.app.fragments.DumpFragment">
+
+    <TextView
+        android:id="@+id/tag_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/hint_color"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/tag_tap_hint"/>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar">
+
+<!--        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/safemode_indicator"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="safe mode on"
+            android:background="@drawable/safemode_indicator" />-->
+
+        <TextView
+            android:id="@+id/auth_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar">
+
+
+        <TextView
+            android:id="@+id/tools_data_view"
+            android:textSize="12sp"
+            android:lineSpacingMultiplier="0.9"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/global_text"
+            android:textAlignment="gravity"
+            android:typeface="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+
+    <ImageButton
+        android:layout_alignParentEnd="true"
+        android:layout_margin="6dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tool_list"
+        android:src="@drawable/toolbutton_states"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

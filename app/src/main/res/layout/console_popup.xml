@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/console_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="@color/hint_color"
+        android:text="@string/console_hint" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/console"
+            android:typeface="monospace"
+            android:textSize="13sp"
+            android:textColor="@color/global_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_color" />
+
+    </ScrollView>
+
+    <Button
+        android:layout_below="@id/scrollView"
+        android:id="@+id/btn_console_archive"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/console_btn_archive"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

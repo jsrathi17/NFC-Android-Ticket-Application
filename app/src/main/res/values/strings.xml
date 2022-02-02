@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--APP NAME-->
+    <string name="app_name">CS-E4300</string>
+
+    <!--TOOL POPUP ITEMS-->
+    <string name="action_erase_all">Erase all</string>
+    <string name="action_auth_test">Test authentication</string>
+
+    <!-- DUMP MENU STRINGS -->
+    <string name="menu_normal_mode">Normal Mode</string>
+    <string name="menu_log">Log</string>
+    <string name="menu_keys">Keys</string>
+    <string name="menu_dump">Dump</string>
+
+    <!--DIALOG STRINGS-->
+    <string name="action_cancel">"Cancel"</string>
+    <string name="action_erase">"Erase"</string>
+    <string name="btn_write_key">"Write key"</string>
+    <string name="switch_auth_first">"authenticate first</string>
+
+    <!--CONTEXTUAL ACTIONBAR ITEMS-->
+    <string name="action_delete">Delete</string>
+    <string name="select_all">Select all</string>
+
+    <!--ACTION BUTTON TITLE-->
+    <string name="action_show_console">Console</string>
+
+    <!--TICKET SECTION BUTTON TITLES-->
+    <string name="issue_mode">Issue</string>
+    <string name="validate_mode">Validate</string>
+
+    <!--MISC-->
+    <string name="console_btn_archive">Archive</string>
+    <string name="key_in_use">"Key in use: "</string>
+    <string name="new_key">"New key"</string>
+    <string name="save_key">"Save"</string>
+    <string name="key_save_hint">"will be saved to key list"</string>
+    <string name="new_key_hint">"16 chars or 0x with 16 digits"</string>
+    <string name="log_saved_msg">"Log data saved"</string>
+    <string name="archive_empty_hint">"Archive is empty"</string>
+    <string name="selected_msg">"Selected: "</string>
+    <string name="cbar_menu_title">"Menu"</string>
+    <string name="tag_tap_hint">Tap a tag</string>
+    <string name="automatic_authentication">"Automatic authentication when tag is found"</string>
+    <string name="console_hint">"Console is empty"</string>
+    <string name="share">Share</string>
+    <string name="bin">BIN</string>
+    <string name="refresh">Refresh</string>
+    <string name="default_key">"default key"</string>
+
+    <!--INFO STRINGS-->
+    <string name="write_key_info">"This function lets you change the authentication key on an Ultralight C tag. The authentication key is stored on pages 44–47, and if the pages are protected by the AUTH settings, then you must set authentication enabled before attempting to write the key.\n\nChoose the new key from the spinner list."</string>
+    <string name="new_key_info">"Type in a new authentication key. In the tools section the authentication key can be either 16 characters or digits, but not mixed for simplification.\n\nTo enter a numeral key you must start with '0x'. The key will be saved on the key list."</string>
+
+    <!--WEEKDAYS IN KEY LIST-->
+    <array name="weekdays">
+        <item name="d0">"sunday"</item>
+        <item name="d1">"monday"</item>
+        <item name="d2">"tuesday</item>
+        <item name="d3">"wednesday"</item>
+        <item name="d4">"thursday"</item>
+        <item name="d5">"friday"</item>
+        <item name="d6">"saturday"</item>
+    </array>
+
+    <!--NFC SETTING PROMPT STRINGS-->
+    <string name="nfc_disabled_msg">"NFC is disabled on your device."</string>
+    <string name="action_nfc_settings">"NFC settings"</string>
+    <string name="placeholder_text">Placeholder text</string>
+</resources>

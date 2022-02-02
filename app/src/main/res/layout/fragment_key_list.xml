@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ticketapp.auth.app.fragments.KeyListFragment">
+
+    <LinearLayout
+        android:id="@+id/key_list_top"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/info_gradient">
+
+        <Switch
+            android:id="@+id/auto_auth_switch"
+            android:text="@string/automatic_authentication"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textOff="off"
+            android:textOn="on"
+            android:textColor="@color/list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_above="@id/key_list_top"
+        android:id="@+id/key_list"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+        </ListView>
+
+    <TextView
+        android:layout_above="@id/key_list"
+        android:id="@+id/key_in_use"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:text="Key in use: 0x0000000000000000"
+        android:textColor="@color/list_item_title"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ORIGINAL COLORS-->
+    <item name="dialog_background_color" type="color">#ffffff</item>
+    <item name="dropdown" type="color">#ff456dc2</item>
+    <item name="actionmode" type="color">@color/topbar</item>
+    <item name="background_color" type="color">#fffefff6</item>
+    <item name="global_text" type="color">#000</item>
+    <item name="topbar" type="color">#ff456dc2</item>
+    <item name="white" type="color">#fffefff6</item>
+    <item name="list_item_title" type="color">#ff3b3b3b</item>
+    <item name="button_disabled" type="color">#585858</item>
+    <item name="button_pressed" type="color">#ffffff</item>
+    <item name="text_enabled" type="color">#ffffff</item>
+    <item name="text_disabled" type="color">#ffababab</item>
+    <item name="divider" type="color">#8b6a6a6a</item>
+    <item name="selected" type="color">#295a565b</item>
+    <item name="default_key" type="color">#ff2e2e2e</item>
+    <item name="hint_color" type="color">#bc303030</item>
+
+    <item name="safe_mode_on" type="color">#ff499c38</item>
+    <item name="safe_mode_off" type="color">#ffc42e2e</item>
+
+    <item name="monday" type="color">#259b24</item>
+    <item name="tuesday" type="color">#e51c23</item>
+    <item name="wednesday" type="color">#00bcd4</item>
+    <item name="thursday" type="color">#ff9800</item>
+    <item name="friday" type="color">#ffff5722</item>
+    <item name="saturday" type="color">#ff673ab7</item>
+    <item name="sunday" type="color">#3f51b5</item>
+
+    <integer-array name="daycolors">
+        <item>@color/sunday</item>
+        <item>@color/monday</item>
+        <item>@color/tuesday</item>
+        <item>@color/wednesday</item>
+        <item>@color/thursday</item>
+        <item>@color/friday</item>
+        <item>@color/saturday</item>
+    </integer-array>
+
+
+</resources> 
